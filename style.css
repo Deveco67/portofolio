@@ -1,316 +1,75 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, sans-serif;
-}
-
-html {
-    scroll-behavior: smooth; 
-}
-
-body {
-    background-color: #0d1117; 
-    color: #c9d1d9;
-    line-height: 1.6;
-    overflow-x: hidden;
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgba(22, 27, 34, 0.9);
-    padding: 15px 50px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    backdrop-filter: blur(5px);
-    border-bottom: 1px solid #30363d;
-}
-
-.navbar .logo {
-    font-size: 20px;
-    font-weight: bold;
-    color: #ffffff;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 25px;
-}
-
-.nav-links a {
-    color: #8b949e;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s;
-}
-
-.nav-links a:hover {
-    color: #ffffff;
-}
-.intro-section {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 100px 50px 50px; 
-    background: radial-gradient(circle at center, #161b22 0%, #0d1117 100%);
-}
-
-.intro-container {
-    display: flex;
-    width: 100%;
-    max-width: 1200px;
-    align-items: center;
-    gap: 80px;
-}
-
-.intro-left { flex: 1; }
-.intro-right { flex: 1; display: flex; justify-content: center; }
-
-.intro-left h1 {
-    font-size: 56px;
-    margin-bottom: 20px;
-    line-height: 1.1;
-    background: linear-gradient(90deg, #58a6ff, #a371f7, #58a6ff);
-    background-size: 200% auto;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: shine 3s linear infinite;
-}
-
-.intro-left p {
-    font-size: 18px;
-    color: #8b949e;
-    max-width: 600px;
-}
-
-.photo-wrapper {
-    width: 350px;
-    height: 350px;
-    border-radius: 50%; 
-    border: 3px solid #58a6ff; 
-    overflow: hidden; 
-    box-shadow: 0 0 30px rgba(88, 166, 255, 0.3);
+/* --- ANIMASI MUNCUL (FADE IN) --- */
+.animasi-muncul {
     opacity: 0;
-    animation: fadeInAndSlide 1.5s ease-out 1s forwards, floating 4s ease-in-out infinite 2.5s;
+    transform: translateY(30px);
+    animation: munculMulus 1s ease-out forwards;
 }
 
-.photo {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
+/* Penundaan animasi biar munculnya bergantian secara elegan */
+.delay-1 { animation-delay: 0.2s; }
+.delay-2 { animation-delay: 0.5s; }
+.delay-3 { animation-delay: 0.8s; }
+
+@keyframes munculMulus {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-.section-box {
-    margin: 80px auto;
-    text-align: center;
-    max-width: 900px;
-    padding: 80px 20px 40px; 
+/* --- GAYA KUSTOM & HOVER --- */
+
+/* Efek Foto Profil */
+.profile-img {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.profile-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(88, 166, 255, 0.5) !important;
 }
 
-.section-box h2 {
-    color: #58a6ff;
-    margin-bottom: 30px;
-    font-size: 28px;
+/* Efek Ikon Badge Tech Stack */
+.tech-badge {
+    transition: transform 0.2s ease;
+}
+.tech-badge:hover {
+    transform: translateY(-4px);
 }
 
-.badges img {
-    margin: 8px;
-    border-radius: 4px;
+/* Efek Kartu Project */
+.custom-card {
+    background-color: #161b22 !important;
+    border: 1px solid #30363d !important;
+    border-radius: 12px;
     transition: all 0.3s ease;
 }
-
-.badges img:hover { 
-    transform: scale(1.15) translateY(-5px); 
-    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2); 
+.custom-card:hover {
+    transform: translateY(-8px);
+    border-color: #58a6ff !important;
+    box-shadow: 0 12px 25px rgba(88, 166, 255, 0.15);
 }
 
-.github-graph {
-    background-color: #ffffff; 
-    padding: 20px;
-    border-radius: 10px;
-    display: inline-block;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
-    width: 100%;
-    overflow-x: auto; 
-}
-
-.github-graph img {
-    max-width: 100%;
-    min-width: 600px; 
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    border-top: 1px solid #30363d;
+/* Efek Ikon Sosial Media di Footer */
+.social-icon {
     color: #8b949e;
-    background-color: #161b22;
-}
-
-
-.animate-text { 
-    opacity: 0; 
-    animation: fadeIn 1.5s ease-out forwards; 
-}
-
-.intro-left p.animate-text { 
-    animation-delay: 0.5s; 
-}
-
-@keyframes fadeIn { 
-    to { opacity: 1; } 
-}
-
-@keyframes fadeInAndSlide {
-    from { opacity: 0; transform: translateX(20px); }
-    to { opacity: 1; transform: translateX(0); }
-}
-
-@keyframes shine {
-    to { background-position: 200% center; }
-}
-
-@keyframes floating {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(-15px); }
-    100% { transform: translateY(0); }
-}
-
-.repo-grid {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 20px;
-}
-
-.repo-card-link {
-    transition: transform 0.3s ease;
-}
-
-.repo-card-link:hover {
-    transform: translateY(-5px);
-}
-
-.repo-card-link img {
-    max-width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-}
-
-.footer-section {
-    background-color: #161b22;
-    border-top: 1px solid #30363d;
-    padding: 60px 20px 20px;
-    text-align: center;
-    margin-top: 80px;
-}
-
-.footer-content h2 {
-    color: #ffffff;
-    margin-bottom: 15px;
-}
-
-.footer-content p {
-    color: #8b949e;
-    margin-bottom: 35px;
-    font-size: 16px;
-}
-
-.social-links {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-bottom: 50px;
-    flex-wrap: wrap;
-}
-
-.social-btn {
-    background-color: #21262d;
-    color: #c9d1d9;
-    padding: 10px 25px;
-    text-decoration: none;
-    border-radius: 6px;
-    border: 1px solid #30363d;
-    transition: all 0.2s ease;
-    font-weight: bold;
-}
-
-.social-btn:hover {
-    background-color: #30363d;
-    color: #ffffff;
-    border-color: #8b949e;
-    transform: translateY(-3px);
-}
-
-.footer-bottom {
-    padding-top: 25px;
-    border-top: 1px solid #30363d;
-    color: #8b949e;
-    font-size: 14px;
-}   
-
-/* --- GAYA UNTUK KOTAK PROJECT KECIL --- */
-.repo-grid {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 30px;
-}
-
-.project-card-small {
-    background-color: #161b22; 
-    border: 1px solid #30363d; 
-    border-radius: 12px; 
-    padding: 20px;
-    width: 100%;
-    max-width: 350px; 
-    text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
     transition: all 0.3s ease;
 }
-
-
-.project-card-small:hover {
-    transform: translateY(-5px); 
-    border-color: #58a6ff;
-    box-shadow: 0 8px 20px rgba(88, 166, 255, 0.15); 
-}
-
-.project-card-small h3 {
+.social-icon:hover {
     color: #ffffff;
-    font-size: 18px;
-    margin-bottom: 10px;
+    transform: translateY(-5px) scale(1.1);
 }
 
-.project-card-small p {
-    color: #8b949e;
-    font-size: 14px;
-    margin-bottom: 20px;
-    line-height: 1.5;
-    flex-grow: 1; 
+/* Mempercantik Scrollbar Browser Desktop */
+::-webkit-scrollbar {
+    width: 10px;
 }
-
-.tech-tags {
-    display: flex;
-    gap: 8px;
-    flex-wrap: wrap;
+::-webkit-scrollbar-track {
+    background: #0d1117; 
 }
-
-.tech-tags span {
-    background-color: #238636;
-    color: #ffffff;
-    font-size: 11px;
-    padding: 4px 10px;
-    border-radius: 15px;
-    font-weight: bold;
+::-webkit-scrollbar-thumb {
+    background: #30363d; 
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #58a6ff; 
 }
