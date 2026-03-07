@@ -31,6 +31,7 @@
             <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" alt="Firebase" class="tech-badge">
             
             <img src="https://img.shields.io/badge/Android%20Studio-3DDC84?style=for-the-badge&logo=android-studio&logoColor=white" alt="Android Studio" class="tech-badge">
+            <img src="https://img.shields.io/badge/Jetpack%20Compose-4285F4?style=for-the-badge&logo=Jetpack-Compose&logoColor=white" alt="Jetpack Compose" class="tech-badge">
             <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" alt="Figma" class="tech-badge">
             <img src="https://img.shields.io/badge/Canva-%2300C4CC?style=for-the-badge&logo=Canva&logoColor=white" alt="Canva" class="tech-badge">
         </div>
@@ -48,8 +49,24 @@
                 <a href="https://github.com/Deveco67/KusukaTani" target="_blank" class="text-decoration-none">
                     <div class="card h-100 custom-card bg-dark" style="background-color: #161b22 !important; border-color: #30363d !important;">
                         <div class="card-body">
-                            <h4 class="card-title text-white fw-bold" style="color: #58a6ff !important;"><i class="bi bi-phone me-2"></i>KusukaTani</h4>
-                            <p class="card-text mt-3" style="color: #8b949e; font-size: 15px;">Aplikasi mobile berbasis Android yang terintegrasi dengan Firebase untuk manajemen data.</p>
+                            <h4 class="card-title text-white fw-bold" style="color: #58a6ff !important;">KusukaTani</h4>
+                            <p class="card-text mt-3" style="color: #8b949e; font-size: 15px;">Aplikasi mobile marketplace untuk alat-alat pertanian.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 pb-4">
+                            <span class="badge" style="background-color: #7F52FF;">Kotlin</span>
+                            <span class="badge" style="background-color: #00aeff;">Jetpack Compose</span>
+                            <span class="badge" style="background-color: #FFCA28; color: black;">Firebase</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                <a href="https://github.com/Lunaruuuuu/KusukaSembuh" target="_blank" class="text-decoration-none">
+                    <div class="card h-100 custom-card bg-dark" style="background-color: #161b22 !important; border-color: #30363d !important;">
+                        <div class="card-body">
+                            <h4 class="card-title text-white fw-bold" style="color: #58a6ff !important;">KusukaSembuh</h4>
+                            <p class="card-text mt-3" style="color: #8b949e; font-size: 15px;">Aplikasi mobile rumah sakit yang menjelaskan alur kerja antrian rumah sakit.</p>
                         </div>
                         <div class="card-footer bg-transparent border-0 pb-4">
                             <span class="badge" style="background-color: #7F52FF;">Kotlin</span>
@@ -60,15 +77,17 @@
             </div>
 
             <div class="col-12 col-md-6 col-lg-4">
-                <a href="https://www.greenfoot.org/scenarios/34271" target="_blank" class="text-decoration-none">
+                <a href="https://github.com/Deveco67/HSR-News" target="_blank" class="text-decoration-none">
                     <div class="card h-100 custom-card bg-dark" style="background-color: #161b22 !important; border-color: #30363d !important;">
                         <div class="card-body">
-                            <h4 class="card-title text-white fw-bold" style="color: #58a6ff !important;"><i class="bi bi-controller me-2"></i>Tentara Nusantara</h4>
-                            <p class="card-text mt-3" style="color: #8b949e; font-size: 15px;">sebuah game top-view shooter 2D bertema kepahlawanan Indonesia yang menghadirkan pengalaman bermain seru dan mendidik..</p>
+                            <h4 class="card-title text-white fw-bold" style="color: #58a6ff !important;">HSR News</h4>
+                            <p class="card-text mt-3" style="color: #8b949e; font-size: 15px;">Website interaktif penyedia informasi untuk game Honkai: Star Rail dengan sistem routing dan dinamis.</p>
                         </div>
                         <div class="card-footer bg-transparent border-0 pb-4">
-                            <span class="badge" style="background-color: #b07219;">Java</span>
-                            <span class="badge" style="background-color: #2e8b57;">Greenfoot</span>
+                            <span class="badge" style="background-color: #777BB4;">PHP Native</span>
+                            <span class="badge" style="background-color: #E34F26;">HTML</span>
+                            <span class="badge" style="background-color: #1dc5df;">CSS</span>
+                            <span class="badge" style="background-color: #c909fe;">Bootstrap</span>
                         </div>
                     </div>
                 </a>
