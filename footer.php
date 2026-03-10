@@ -14,7 +14,7 @@
             </a>
         </div>
         
-        <p class="mb-0" style="color: #8b949e; font-size: 14px;">&copy; 2026 Derico Liunardo. Portofolio Website.</p>
+        <p class="mb-0" style="color: #8b949e; font-size: 14px;">412023029_Derico Liunardo</p>
     </div>
 </footer>
 

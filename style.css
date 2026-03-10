@@ -28,14 +28,6 @@
     box-shadow: 0 0 25px rgba(88, 166, 255, 0.5) !important;
 }
 
-/* Efek Ikon Badge Tech Stack */
-.tech-badge {
-    transition: transform 0.2s ease;
-}
-.tech-badge:hover {
-    transform: translateY(-4px);
-}
-
 /* Efek Kartu Project */
 .custom-card {
     background-color: #161b22 !important;
@@ -59,7 +51,48 @@
     transform: translateY(-5px) scale(1.1);
 }
 
-/* Mempercantik Scrollbar Browser Desktop */
+/* --- GAYA KARTU TECH STACK (MODERN) --- */
+.tech-card {
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 12px;
+    padding: 25px 20px;
+    transition: all 0.3s ease-in-out;
+    height: 100%;
+}
+.tech-card:hover {
+    border-color: #58a6ff;
+    box-shadow: 0 8px 24px rgba(88, 166, 255, 0.15);
+    transform: translateY(-8px);
+}
+.tech-icon-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+.tech-pill {
+    background-color: #21262d;
+    border: 1px solid #30363d;
+    color: #c9d1d9;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: default;
+}
+.tech-pill:hover {
+    background-color: #30363d;
+    color: #ffffff;
+    border-color: #8b949e;
+    transform: scale(1.05);
+}
+
+/* --- SCROLLBAR CUSTOM --- */
 ::-webkit-scrollbar {
     width: 10px;
 }
