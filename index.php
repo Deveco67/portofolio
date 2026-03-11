@@ -10,7 +10,7 @@
             </p>
         </div>
         <div class="col-md-5 text-center animasi-muncul delay-2">
-            <img src="gambar/naoi.jpg" alt="Foto Profil" class="img-fluid rounded-circle shadow-lg profile-img" style="max-width: 250px; border: 4px solid #58a6ff;">
+            <img src="gambar/gueh.jpeg" alt="Foto Profil" class="img-fluid rounded-circle shadow-lg profile-img" style="max-width: 250px; border: 4px solid #58a6ff;">
         </div>
     </section>
 
@@ -43,7 +43,7 @@
                         <span class="tech-pill">CSS</span>
                         <span class="tech-pill">JavaScript</span>
                         <span class="tech-pill">Bootstrap</span>
-                        <span class="tech-pill">PHP Native</span>
+                        <span class="tech-pill">PHP</span>
                     </div>
                 </div>
             </div>
